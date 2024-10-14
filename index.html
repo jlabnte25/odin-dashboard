@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Odin Project Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-logo">
+            <div>LOGO</div>
+            <p>Dashboard</p>
+        </div>
+        <div class="sidebar-navigation">
+            <ul class="sidebar-group1">
+                <li><img src="./assets/icon_placeholder.png" width="16px"> Home</li>
+                <li><img src="./assets/icon_placeholder.png" width="16px"> Orders</li>
+                <li><img src="./assets/icon_placeholder.png" width="16px"> Products</li>
+                <li><img src="./assets/icon_placeholder.png" width="16px"> Customers</li>
+                <li><img src="./assets/icon_placeholder.png" width="16px"> Analytics</li>
+                <li><img src="./assets/icon_placeholder.png" width="16px"> Inbox</li>
+            </ul>
+            <ul class="sidebar-group2">
+                <li><img src="./assets/icon_placeholder.png" width="16px"> Online Store</li>
+                <li><img src="./assets/icon_placeholder.png" width="16px"> Point of Sale</li>
+                <li><img src="./assets/icon_placeholder.png" width="16px"> Inventory</li>
+            </ul>
+            <ul class="sidebar-group3">
+                <li><img src="./assets/icon_placeholder.png" width="16px"> Settings</li>
+                <li><img src="./assets/icon_placeholder.png" width="16px"> Support</li>
+                <li><img src="./assets/icon_placeholder.png" width="16px"> Log Out</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="dashboard">
+        
+        <div class="searchbar">
+            <img src="./assets/magnifying_glass.webp">
+            <form>
+                <input type="text" name="search" id="search" placeholder="type watchu want">
+            </form>
+        </div>
+
+        <div class="admin-details">
+            <img src="./assets/notification_bell.png" >
+            <img id="profile-picture" src="./assets/profile_picture.png">
+            <p>Franz Khafka</p>
+        </div>
+
+        <div class="widget-container main-stats">
+            <div class="widget type1">
+                <div class="mini-stats">
+                    <img src="./assets/arrow-down.png" width="10">
+                    <p>10.12%</p>
+                </div>
+
+                <div class="widget-title big">
+                    <p>Total Sales</p>
+                </div>
+                
+                <div class="widget-stats">
+                    <p>$999.00Ks</p>
+                </div>
+            </div>
+
+            <div class="widget type1">
+                <div class="mini-stats">
+                    <img src="./assets/arrow-up.png" width="10">
+                    <p>10.12%</p>
+                </div>
+
+                <div class="widget-title big">
+                    <p>Total Orders</p>
+                </div>
+                
+                <div class="widget-stats">
+                    <p>180.00K</p>
+                </div>
+            </div>
+
+            <div class="widget type2">
+                <div class="widget-title big">
+                    <p>Stock Alert</p>
+                </div>
+                <div class="mini-stats-type2">
+                    <img src="./assets/arrow-down.png" width="10">
+                    <p class="inventory-stat">low</p>
+                    <p class="inventory-product">Pedigree Mini</p>
+                </div>
+                <div class="mini-stats-type2">
+                    <img src="./assets/arrow-down.png" width="10">
+                    <p class="inventory-stat">low</p>
+                    <p class="inventory-product">Pedigree Mini</p>
+                </div>
+                <div class="mini-stats-type2">
+                    <img src="./assets/arrow-down.png" width="10">
+                    <p class="inventory-stat">low</p>
+                    <p class="inventory-product">Pedigree Mini</p>
+                </div>
+                <div class="mini-stats-type2">
+                    <img src="./assets/arrow-down.png" width="10">
+                    <p class="inventory-stat">low</p>
+                    <p class="inventory-product">Pedigree Mini</p>
+                </div>
+                <div class="mini-stats-type2">
+                    <img src="./assets/arrow-down.png" width="10">
+                    <p class="inventory-stat">low</p>
+                    <p class="inventory-product">Pedigree Mini</p>
+                </div>
+            </div>
+        </div>  <!--widget container end -->
+
+        <div class="widget quick-actions">
+            <p class="widget-title regular">Quick Actions</p>
+            <ul>
+                <li><img src="./assets/add.png"> Add new product</li>
+                <li><img src="./assets/1564531_chart_business_graph_statistics_icon.png"> Download sales summary</li>
+                <li><img src="./assets/pie-chart.png"> Download inventory summary</li>
+            </ul>
+        </div>
+
+        <div class="widget latest-orders"> 
+            <p class="widget-title regular">Latest Orders</p>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>ID</th>
+                        <th>Product Name</th>
+                        <th>Qty</th>
+                        <th>Total Price</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>00001</td>
+                        <td>Pedigree Mini..</td>
+                        <td>12</td>
+                        <td>$12.00</td>
+                        <td>Completed</td>
+                        <td>
+                            <img src="./assets/icon_placeholder.png" width="16px">
+                            <img src="./assets/icon_placeholder"  width="16px">
+                            <img src="./assets/icon_placeholder"  width="16px">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>00001</td>
+                        <td>Pedigree Mini..</td>
+                        <td>12</td>
+                        <td>$12.00</td>
+                        <td>Completed</td>
+                        <td>
+                            <img src="./assets/icon_placeholder.png" width="16px">
+                            <img src="./assets/icon_placeholder.png" width="16px">
+                            <img src="./assets/icon_placeholder.png" width="16px">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>00001</td>
+                        <td>Pedigree Mini..</td>
+                        <td>12</td>
+                        <td>$12.00</td>
+                        <td>Completed</td>
+                        <td>
+                            <img src="./assets/icon_placeholder.png" width="16px">
+                            <img src="./assets/icon_placeholder.png" width="16px">
+                            <img src="./assets/icon_placeholder.png" width="16px">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>00001</td>
+                        <td>Pedigree Mini..</td>
+                        <td>12</td>
+                        <td>$12.00</td>
+                        <td>Completed</td>
+                        <td>
+                            <img src="./assets/icon_placeholder.png" width="16px">
+                            <img src="./assets/icon_placeholder.png" width="16px">
+                            <img src="./assets/icon_placeholder.png" width="16px">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>00001</td>
+                        <td>Pedigree Mini..</td>
+                        <td>12</td>
+                        <td>$12.00</td>
+                        <td>Completed</td>
+                        <td>
+                            <img src="./assets/icon_placeholder.png" width="16px">
+                            <img src="./assets/icon_placeholder.png" width="16px">
+                            <img src="./assets/icon_placeholder.png" width="16px">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>00001</td>
+                        <td>Pedigree Mini..</td>
+                        <td>12</td>
+                        <td>$12.00</td>
+                        <td>Completed</td>
+                        <td>
+                            <img src="./assets/icon_placeholder.png" width="16px">
+                            <img src="./assets/icon_placeholder.png" width="16px">
+                            <img src="./assets/icon_placeholder.png" width="16px">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div> <!--End of Latest Orders Widget-->
+
+        <div class="conversion-rates widget">
+            <div>
+                <p class="widget-title regular">Conversion Summary</p>
+                <form>
+                    <select name="date">
+                        <option value="today">Today</option>
+                        <option value="month">Past Month</option>
+                        <option value="quarter">Past Quarter</option>
+                        <option value="year">Year</option>
+                    </select>
+                </form>
+            </div>
+            <div>
+            <p>Channels' Stats</p>
+            <p>(%)</p>
+            </div>
+            
+            <div>
+                <div class="conversion-bar">
+                    <div class="conversion-fill" style="width: 20%;"></div>
+                </div>
+                <p>20%</p>
+            </div>
+            <div>
+                <div class="conversion-bar">
+                    <div class="conversion-fill" style="width: 30%;"></div>
+                </div>
+                <p>30%</p>
+            </div>
+            <div>
+                <div class="conversion-bar">
+                    <div class="conversion-fill" style="width: 40%;"></div>
+                </div>
+                <p>40%</p>
+            </div>
+        </div>
+
+
+        <div class="sales-summary widget">
+            <p class="widget-title regular">Sales Summary</p>
+            <form>
+                <select>
+                    <option value="Cainta">Cainta</option>
+                    <option value="Angono">Angono</option>
+                    <option value="Binangonan">Binangonan</option>
+                </select>
+            </form>
+
+            <img src="./assets/icon_placeholder.png" width="200px" height="100px">
+        </div>
+
+        <div class="product-ranking widget">
+            <p class="widget-title regular">Best Sellers</p>
+            <table class="product-ranking-table">
+                <tbody>
+                    <tr>
+                        <td><img src="./assets/icon_placeholder.png" width="16px"></td>
+                        <td>Pedigree Mini</td>
+                    </tr>
+                    <tr>
+                        <td><img src="./assets/icon_placeholder.png" width="16px"></td>
+                        <td>Pedigree Mini</td>
+                    </tr>
+                    <tr>
+                        <td><img src="./assets/icon_placeholder.png" width="16px"></td>
+                        <td>Pedigree Mini</td>
+                    </tr>
+                    <tr>
+                        <td><img src="./assets/icon_placeholder.png" width="16px"></td>
+                        <td>Pedigree Mini</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="widget-title regular">Least Sales</p>
+            <table class="product-ranking-table">
+                <tbody>
+                    <tr>
+                        <td><img src="./assets/icon_placeholder.png" width="16px"></td>
+                        <td>Pedigree Mini</td>
+                    </tr>
+                    <tr>
+                        <td><img src="./assets/icon_placeholder.png" width="16px"></td>
+                        <td>Pedigree Mini</td>
+                    </tr>
+                    <tr>
+                        <td><img src="./assets/icon_placeholder.png" width="16px"></td>
+                        <td>Pedigree Mini</td>
+                    </tr>
+                    <tr>
+                        <td><img src="./assets/icon_placeholder.png" width="16px"></td>
+                        <td>Pedigree Mini</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

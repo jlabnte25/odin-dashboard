@@ -1,0 +1,328 @@
+
+body {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100px, repeat(10, 1fr);
+    grid-row-gap: 15px;
+    background-color: #FFFDF0;
+}
+
+.searchbar{
+    grid-column: 1 /10;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.admin-details {
+    grid-column: 10/-1;
+    grid-row: 1/2;
+}
+
+.widget-container,.main-stats{
+    grid-column: 1/10;
+    grid-row: 2/4;
+    display: flex;
+}
+
+.quick-actions {
+    grid-column: 10/-1;
+    grid-row:2/4;
+}
+
+.latest-orders {
+    grid-column: 1/10;
+    grid-row:4/7;
+}
+
+.conversion-rates{
+    grid-column: 10/-1;
+    grid-row:4/6;
+}
+
+.sales-summary {
+    grid-column: 1/5;
+    grid-row:7/8;
+}
+
+.product-ranking {
+    grid-column: 10/-1;
+    grid-row:6/9;
+}
+
+/* End of Page Grid Layout */
+
+/* Start of Individual Layout For Search Bar */
+.searchbar{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: #001840;
+    gap: 15px;
+    padding: 15px;
+}
+
+.searchbar input {
+    flex: 1;
+    width: 28em;
+    height: 1.8rem;
+    box-shadow: inset 1px 1px 2px rgba(0,0,0,0.5);
+    border-radius: 6px;
+    padding-left: 15px;
+}
+
+.searchbar form {
+    border:none;
+}
+
+.searchbar img {
+    width: 20px;
+    border: none;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(96deg) brightness(103%) contrast(103%);
+}
+
+
+/* End of Individual Layout For Search Bar */
+
+/* Start of Individual Layout For Admin Details */
+
+.admin-details {
+    display: flex;
+    justify-content: end;
+    padding-right: 15px;
+    align-items: center;
+    background-color: #001840;;
+    gap:10px;
+    color: white;
+}
+
+.admin-details > img:nth-child(1) {
+    width:20px;
+    border: none;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(96deg) brightness(103%) contrast(103%);
+}
+
+.admin-details >img:nth-child(2) {
+    width: 30px;
+}
+
+/* End of Individual Layout For Admin Details */
+
+/* Start of Individual Layout For Stock Alerts */
+
+.widget-container{
+    display: flex;
+    padding-right: 15px;
+}
+
+.widget-container .widget {
+    background-color: #102A71;
+    color: white;
+}
+
+.main-stats > div {
+    flex: 1;
+    margin: 0 0 0 15px;
+}
+
+.widget.type1 {
+    display: grid;
+    grid-template-columns: repeat(3,3fr);
+    grid-template-rows: repeat(3,3fr);
+}
+
+.mini-stats {
+    grid-column: 3/-1;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    background-color: #FFDC5F;
+    height: 0.8rem;
+    padding: 0.2rem;
+    border-radius: 3px;
+    color: #102A71;
+}
+
+.mini-stats p {
+    margin: 0;
+    font-size: 0.7rem;
+}
+
+.mini-stats img {
+    width: 0.7rem;
+    margin-right: 0.7rem;
+    align-self: flex-start;
+}
+
+.widget-title.big {
+    grid-column: 1/3;
+    grid-row:2/3;
+}
+
+.widget-stats {
+    grid-column: 1/3;
+    grid-row:3/-1;
+}
+/**/
+.mini-stats-type2 {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 0.3rem 0;
+    font-size: 0.8rem;
+}
+
+.mini-stats-type2 img {
+    filter: invert(21%) sepia(95%) saturate(6837%) hue-rotate(357deg) brightness(116%) contrast(116%);
+}
+
+/* End of Individual Layout For Stock Alerts */
+
+/* Start of Individual Layout For Quick Actions */
+.quick-actions {
+    margin-right:15px;
+}
+
+.quick-actions ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.quick-actions li {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    align-items: first baseline;
+    gap: 15px;
+    margin: 0.2rem 0;
+}
+
+.quick-actions img {
+    width: 1rem;
+
+}
+
+
+/* End of Individual Layout For Quick Action */
+
+/* Start of Individual Layout For Latest Orders */
+
+.latest-orders {
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    color: #102A71;
+    border-radius: 10px;
+
+}
+
+
+.latest-orders .table {
+    flex:1;
+    text-align: center;
+    border-collapse: collapse;
+    font-size: 0.8rem;
+}
+
+.table thead {
+    font-size: 1rem;
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #ffdc5f27; /* Light gray for odd rows */
+    border-radius: 8px;
+}
+
+.table thead {
+    background-color: #F5C400; 
+    color: #102A71;      
+}
+
+
+/* End of Individual Layout For Latest Orders */
+
+/* Start of Individual Layout For Conversion Summary */
+
+.conversion-rates {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+}
+
+.conversion-rates > div {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    margin: 0.7rem;
+}
+
+
+.conversion-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    height: 1.3rem;
+}
+
+
+.conversion-fill {
+    height: 100%;
+    background-color: #F5C400; /* Green color for converted customers */
+    transition: width 0.3s ease;
+}
+
+.conversion-percentage {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+
+
+
+/* universal */
+body {
+    margin:0;
+}
+
+.widget-title.regular {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight:500;
+}
+
+.widget-title.big p{
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+.widget {
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.3);
+    border-radius: 6px;
+    padding: 15px;
+}
+
+.dashboard {
+    width: 100%;
+}
+
+p {
+    margin: 0;
+}
+
+.widget-title.big, .widget-title.regular {
+    margin-bottom: 15px;
+}
