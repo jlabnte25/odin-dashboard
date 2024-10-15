@@ -2,7 +2,7 @@
 body {
     display: flex;
     font-family: Roboto, Helvetica, sans-serif;
-    background-color: #FFFDF0;
+    background-color: white;
 }
 
 .dashboard {
@@ -10,7 +10,7 @@ body {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 100px, repeat(10, 1fr);
     grid-row-gap: 15px;
-    background-color: #FFFDF0;
+    background-color: white;
 }
 
 .searchbar{
@@ -240,13 +240,13 @@ body {
 }
 
 .table tbody tr:nth-child(even) {
-    background-color: #ffdc5f27; /* Light gray for odd rows */
+    background-color: #7a7ee027; /* Light gray for odd rows */
     border-radius: 8px;
 }
 
 .table thead {
-    background-color: #F5C400; 
-    color: #102A71;      
+    background-color: #102A71; 
+    color: white;      
 }
 
 
@@ -281,7 +281,7 @@ body {
 
 .conversion-bar {
     width: 100%;
-    background-color: #e0e0e0;
+    background-color: #c7d0e9;
     border-radius: 25px;
     overflow: hidden;
     position: relative;
@@ -362,7 +362,7 @@ body {
 /* Start of Individual Layout For Sidebar */
 
 .sidebar {
-    box-shadow: inset -10px -10px 8px rgba(168, 159, 138, 0.3);
+    box-shadow: inset -10px -10px 8px rgba(216, 216, 237, 0.3);
     height: 100vh;
     position: fixed;
     width: 15vw;
@@ -412,6 +412,7 @@ body {
 /* universal */
 body {
     margin:0;
+    color: #102A71;
 }
 
 .widget-title.regular {
