@@ -266,6 +266,17 @@ body {
     margin: 0.7rem;
 }
 
+.conversion-rates-header {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.channel {
+    width: 80%;
+    font-size: 0.9rem;
+}
+
 
 .conversion-bar {
     width: 100%;
