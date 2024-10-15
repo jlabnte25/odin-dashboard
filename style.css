@@ -366,6 +366,11 @@ body {
     height: 100vh;
     position: fixed;
     width: 15vw;
+    color: #4c525e;
+}
+
+.sidebar img {
+    filter: invert(32%) sepia(9%) saturate(733%) hue-rotate(182deg) brightness(94%) contrast(91%);
 }
 
 .sidebar-navigation {
@@ -446,4 +451,8 @@ select {
     border-radius: 5px;
     color: white;
     padding: 3px;
+}
+
+.dashboard .table img {
+    filter: invert(32%) sepia(9%) saturate(733%) hue-rotate(182deg) brightness(94%) contrast(91%);
 }
