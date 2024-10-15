@@ -2,6 +2,7 @@
 body {
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFFDF0;
 }
 
 .dashboard {
@@ -300,8 +301,108 @@ body {
     font-size: 16px;
 }
 
+/* End of Individual Layout For Conversion Summary*/
+
+/* Start of Individual Layout For Sales Summary */
+
+.sales-summary {
+    margin-left: 15px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat (2,1fr)
+}
+
+.sales-summary img {
+    grid-column: 1/-1;
+    grid-row: 2/-1;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.sales-summary .widget-title {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.sales-summary form {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: right;
+}
 
 
+/* End of Individual Layout For Sales Summary*/
+
+/* Start of Individual Layout For Best Sellers / Least Sell */
+
+.product-ranking {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+}
+
+.product-ranking table{
+    flex: 1;
+    text-align: center;
+    margin: 0.3rem;
+}
+
+.product-ranking .widget-title.regular:nth-of-type(2){
+    margin-top: 15px;
+}
+
+.product-ranking tr td:nth-child(2) {
+    text-align: right;
+}
+
+
+
+/* End of Individual Layout For Best Sellers/ Least Sell*/
+
+/* Start of Individual Layout For Sidebar */
+
+.sidebar {
+    box-shadow: inset -10px -10px 8px rgba(168, 159, 138, 0.3);
+    height: 100vh;
+    position: fixed;
+    width: 15vw;
+}
+
+.sidebar-navigation {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    width: 13vw;
+
+}
+
+.sidebar-logo {
+    margin: 15px;
+}
+
+.sidebar-logo div {
+    font-size: 2rem;
+}
+
+.sidebar-navigation ul{
+    list-style-type: none;
+    margin: 1rem 0;
+    padding: 0;
+}
+
+.sidebar-navigation li{
+    margin: 10px 0;
+
+}
+
+.sidebar-navigation li img {
+    margin-right: 15px;
+}
+
+.sidebar-group3 {
+    position: absolute;
+    bottom:0;
+}
 
 /* universal */
 body {
@@ -328,6 +429,7 @@ body {
 
 .dashboard {
     width: 100%;
+    margin-left:15vw;;
 }
 
 p {
